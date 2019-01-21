@@ -1,0 +1,83 @@
+@mixin acc {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin transition(){
+	transition: all 0.2s ease;
+}
+
+@mixin fw($width) {
+  flex-basis:$width;
+  max-width:$width;
+}
+
+@mixin sb() {
+  display:flex;
+  justify-content:space-between;
+}
+
+@mixin jl() {
+  display:flex;
+  justify-content:flex-start;
+}
+
+@mixin jc() {
+  display:flex;
+  justify-content:center;
+}
+
+@mixin jr() {
+  display:flex;
+  justify-content:flex-end;
+}
+
+@mixin vt() {
+  display:flex;
+  align-items:flex-start;
+}
+
+@mixin vc() {
+  display:flex;
+  align-items:center;
+}
+
+@mixin vb() {
+  display:flex;
+  align-items:flex-end;
+}
+
+@mixin flexcol() {
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+
+@mixin flexrow() {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin innerColumn(){
+  width:75%;
+  margin:0 auto 40px auto;
+
+}
+
+@mixin zout(){
+  margin:0;
+  padding:0;
+  list-style: none;
+}
